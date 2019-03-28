@@ -1,5 +1,5 @@
 {
-  "name": "react-date-picker",
+  "name": "react-date-picker-formated",
   "version": "7.4.0",
   "description": "A date picker for your React app.",
   "main": "dist/entry.js",

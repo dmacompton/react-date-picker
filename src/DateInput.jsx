@@ -247,22 +247,11 @@ export default class DateInput extends PureComponent {
   get divider() {
     const date = new Date(2017, 11, 11);
 
-    return this.formatDate(date).match(/[^0-9]/)[0];
+    return '-';
   }
 
   get placeholder() {
-    const year = 2017;
-    const monthIndex = 11;
-    const day = 11;
-
-    const date = new Date(year, monthIndex, day);
-
-    return (
-      this.formatDate(date)
-        .replace(this.formatNumber(year), 'year')
-        .replace(this.formatNumber(monthIndex + 1), 'month')
-        .replace(this.formatNumber(day), 'day')
-    );
+    return 'year-month-day';
   }
 
   get commonInputProps() {
